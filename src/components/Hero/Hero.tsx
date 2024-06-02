@@ -1,5 +1,5 @@
-import styles from './Hero.module.scss'
 import {Banner} from '@layout/index'
+import styles from './Hero.module.scss'
 
 import banner1 from '@assets/banner-1.jpg'
 
