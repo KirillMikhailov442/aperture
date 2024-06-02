@@ -1,0 +1,46 @@
+@import "./var.scss";
+
+html{
+    font-size: 14px;
+    color: $white;
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $black;
+    // line-height: 20px;
+
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+button{
+    background-color: inherit;
+    border: none;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    font-size: inherit;
+}
+
+
+@media (max-width: 500px){
+    html{
+        font-size: 12px;
+    }
+}

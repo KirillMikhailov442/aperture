@@ -1,0 +1,36 @@
+@import '@styles/var.scss';
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-block: 120px 100px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 600px;
+    gap: 16px;
+}
+
+@media (max-width: 1000px){
+    .grid{
+        grid-auto-rows: 500px;
+    }
+}
+
+@media (max-width: 800px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px){
+    .wrapper{
+        margin-block: 50px 70px;
+    }
+
+    .grid{
+        grid-auto-rows: 400px;
+    }
+}

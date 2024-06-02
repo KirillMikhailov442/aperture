@@ -1,0 +1,113 @@
+@import '@styles/var.scss';
+
+.header{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: $black;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.logo{
+    height: auto;
+    display: block;
+    line-height: 0;
+}
+
+.nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+    column-gap: 32px;
+}
+
+.item{
+    font-size: 15px;
+}
+
+.hamburger{
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.mobileList{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: $black;
+    z-index: 100;
+    top: 0;
+    left: 100%;
+    transition: left .5s ease;
+    padding: 30px;
+    display: none;
+
+    & header{
+        display: flex;
+
+        & * {
+            margin-left: auto;
+        }
+    }
+
+    &Close{
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    & ul{
+        flex-direction: column;
+    }
+
+    & li{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    & button{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    &Content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.show{
+    left: 0;
+}
+
+@media (max-width: 900px){
+
+    .header{
+        height: 70px;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .hamburger, .mobileList{
+        display: block;
+    }
+}

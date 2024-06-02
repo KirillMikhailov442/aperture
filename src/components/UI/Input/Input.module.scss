@@ -1,0 +1,13 @@
+@import '@styles/var.scss';
+
+.wrapper{
+    background-color: $white;
+    display: flex;
+    padding: 10px 6px;
+    border-radius: 10px;
+}
+
+.input{
+    outline: none;
+    flex-grow: 1;
+}

@@ -1,0 +1,36 @@
+@import '@styles/var.scss';
+
+.card{
+    padding: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.title{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.subtitle{
+    color: $gray;
+    margin-block: 10px 30px;
+    line-height: 20px;
+}
+
+@media (max-width: 800px){
+    .card{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .subtitle{
+        line-height: 1.2;
+        margin-block: 5px 15px;
+        
+    }
+}

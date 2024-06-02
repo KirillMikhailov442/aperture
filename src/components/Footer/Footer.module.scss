@@ -1,0 +1,162 @@
+@import '@styles/var.scss';
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding-block: 100px;
+    min-height: 452px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.image{
+    margin-bottom: 20px;
+}
+
+.links{
+    display: flex;
+    gap: 55px;
+    margin-right: 100px;
+}
+
+.col{
+    &Title{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $gray;
+    }
+
+    &List{
+        & li{
+            margin-top: 10px;
+        }
+    }
+}
+
+.title{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.subtitle{
+    color: $gray;
+    font-size: 13px;
+}
+
+.about{
+    max-width: 450px;
+}
+
+.subscribe{
+    border-block: 2px solid $white;
+    margin-block: 36px;
+    padding-block: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input{
+    flex-basis: 40%;
+    height: 52px;
+}
+
+
+.inputSpan{
+    height: 30px;
+    width: 65px;
+    background-color: $black;
+    border-radius: 12px;
+    margin-left: 5px;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px 100px;
+    color: $gray;
+}
+
+.socialMedia{
+    display: flex;
+    font-size: 24px;
+    gap: 20px;
+    transition: color .5s ease;
+
+    & li{
+        transition: color .5s ease;
+
+        &:hover{
+            color: $white;
+        }
+    }
+}
+
+
+@media (max-width: 1000px){
+    .links{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 700px){
+    .input{
+        height: 35px;
+    }
+
+    .inputSpan{
+        height: 15px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 400px){
+    .header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about{
+        text-align: center;
+        padding-inline: 50px;
+    }
+    .links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bottom{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .subscribe{
+        flex-direction: column;
+        text-align: center;
+        padding-block: 24px;
+        margin-block: 24px;
+    }
+
+    .title{
+        margin-bottom: 10px;
+    }
+
+    .input{
+        margin-top: 20px;
+        margin-inline: 20px;
+    }
+}
+
+@media (max-width: 340px){
+    .links{
+        text-align: center;
+        gap: 30px;
+    }
+}
